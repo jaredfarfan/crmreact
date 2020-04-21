@@ -3,8 +3,8 @@ require('dotenv').config({ path: 'variables.env' });
 
 const conectarDB = async () => {
     try {
-        //await mongoose.connect(process.env.DB_MONGO, {
-        await mongoose.connect('mongodb://localhost/crmreact', {
+        await mongoose.connect(process.env.DB_MONGO, {
+            //await mongoose.connect('mongodb://localhost/crmreact', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useFindAndModify: false,
